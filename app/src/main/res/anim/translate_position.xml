@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML definition for a Animation.
+	Over the course of 5 seconds, move 100 up and then 100 back down the Y axis. -->
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="50"
+        android:fromYDelta="50"
+        android:toYDelta="0"
+        android:fillAfter="true"
+        android:duration="5000"
+        />
+
+    <translate
+        android:toYDelta="20"
+        android:toXDelta="100"
+        android:fillAfter="true"
+        android:duration="5000"
+        android:startOffset="500"/>
+
+<!--    <translate-->
+<!--        android:toXDelta="200"-->
+<!--        android:toYDelta="300"-->
+<!--        android:fillAfter="true"-->
+<!--        android:duration="2500"-->
+<!--        android:startOffset="1500"/>-->
+
+<!--    <translate-->
+<!--        android:toXDelta="150"-->
+<!--        android:toYDelta="200"-->
+<!--        android:fillAfter="true"-->
+<!--        android:duration="2500"-->
+<!--        android:startOffset="3500"/>-->
+
+<!--    <translate-->
+<!--        android:toXDelta="-300"-->
+<!--        android:toYDelta="300"-->
+<!--        android:fillAfter="true"-->
+<!--        android:duration="2500"-->
+<!--        android:startOffset="4500"/>-->
+
+<!--    <translate-->
+<!--        android:toXDelta="-400"-->
+<!--        android:toYDelta="100"-->
+<!--        android:fillAfter="true"-->
+<!--        android:duration="2500"-->
+<!--        android:startOffset="5500"/>-->
+
+<!--    <translate-->
+<!--        android:toXDelta="-450"-->
+<!--        android:toYDelta="-400"-->
+<!--        android:fillAfter="true"-->
+<!--        android:duration="2500"-->
+<!--        android:startOffset="6500"/>-->
+
+</set>

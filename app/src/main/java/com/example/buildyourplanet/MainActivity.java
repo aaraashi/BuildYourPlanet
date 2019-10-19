@@ -7,15 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class MainActivity extends AppCompatActivity {
+    LottieAnimationView animationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button first_misson = (Button)findViewById(R.id.firstMission);
-        Button second_misson = (Button)findViewById(R.id.secondMisson);
-        Button third_misson = (Button)findViewById(R.id.thirdMisson);
+        Button second_misson = (Button)findViewById(R.id.secondMission);
+        Button third_misson = (Button)findViewById(R.id.thirdMission);
+
+        // animation view
+        animationView = findViewById(R.id.animation_view);
+                animationView.playAnimation();
+        //animationView.setScale(1.4f);
+        animationView.setProgress(0.5f);
 
         first_misson.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -38,5 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void test (View v) {
+        Intent intent = new Intent(getApplicationContext(), PlanetInstruction.class);
+        startActivity(intent);
     }
 }

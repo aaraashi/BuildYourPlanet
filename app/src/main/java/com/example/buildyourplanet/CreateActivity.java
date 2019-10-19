@@ -12,14 +12,14 @@ public class CreateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.firstmisson_instruction);
 
-        Button completeButton = (Button)findViewById(R.id.complete);
-
-        completeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-                startActivity(intent);
-        }
-        });
+//        Button completeButton = (Button)findViewById(R.id.complete);
+//
+//        completeButton.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+//                startActivity(intent);
+//        }
+//        });
     }
 }
