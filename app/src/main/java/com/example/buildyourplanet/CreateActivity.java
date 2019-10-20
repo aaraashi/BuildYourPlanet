@@ -103,7 +103,12 @@ public class CreateActivity extends AppCompatActivity {
 
         Intent values_intent = new Intent(this, PlanetInstruction.class);
         values_intent.putExtra("data", values);
+
+        String mission = getIntent().getStringExtra("mission");
+        values_intent.putExtra("mission", mission);
+
         startActivity(values_intent);
+
 
     }
 }

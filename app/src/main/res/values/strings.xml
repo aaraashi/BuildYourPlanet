@@ -14,16 +14,19 @@
     <string name="firstmission_dialog3">Diameter 75m. It will be like a nuclear bomb explosion if it hits ground.</string>
 
     <string name="firstmission_dialog4">We have to stop it.</string>
+    // mission2
+    <string name="lee">The Earth faces to lack of food. </string>
+    <string name="lee2">Please create new planet to save people</string>
 
     // earth
-    <string name="earthIs">Earth is...\n
-        materials: minerals, rocks, soil and water
+    <string name="earthIs">Earth is...\nmaterials: minerals, rocks, soil and water
     \nDiameter: 12,756 km
-    \nDistance from the Sun: 149.6 (10^6)km</string>
+    \nDistance from the Sun: 149.6 (10^6)km
+    \nTemperature 15 C</string>
 
     // jupiter
-    <string name="jupiterIs">Jupiter is...\n
-        materials: minerals, rocks, soil and water
+    <string name="jupiterIs">Jupiter is...\nmaterials: minerals, rocks, soil and water
     \nDiameter: 12,756 km
-    \nDistance from the Sun: 149.6 (10^6)km</string>
+    \nDistance from the Sun: 149.6 (10^6)km
+    \nTemperature -110 C</string>
 </resources>

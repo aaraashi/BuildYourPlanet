@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</LinearLayout>
+<RelativeLayout
+    tools:context=".SecondMissonActivity"
+    android:background="@drawable/hunger"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="1149dp"
+        android:src="@drawable/dialog_color"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/dialog_button"/>
+    <com.example.buildyourplanet.TypeWriterTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/secondMisson_dialog"
+        android:textSize="30sp"
+        android:textColor="@color/colorDialogConversation"
+        android:layout_alignTop="@+id/dialog_button"
+        android:layout_alignRight="@+id/dialog_button"
+        android:layout_alignLeft="@+id/dialog_button"
+        android:paddingTop="30dp"
+        android:paddingStart="40dp"/>
+</RelativeLayout>

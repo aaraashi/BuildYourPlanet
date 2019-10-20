@@ -26,6 +26,7 @@ public class FirstMissonInstruction extends AppCompatActivity {
             }
         });
         dialog.show();
+
     }
 
     private void showAddItemDialog(Context c) {
@@ -40,6 +41,8 @@ public class FirstMissonInstruction extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(getApplicationContext(), CreateActivity.class);
+                        String mission = "mission 1";
+                        intent.putExtra("mission", mission);
                         startActivity(intent);
                     }
                 })
