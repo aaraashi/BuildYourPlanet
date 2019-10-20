@@ -255,10 +255,11 @@
                 android:id="@+id/et_atmo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="numberDecimal"
-                android:layout_marginStart="20dp"/>
+                android:hint="km"
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
         // Field 5
@@ -283,10 +284,11 @@
                 android:id="@+id/et_diameter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="numberDecimal"
-                android:layout_marginStart="20dp"/>
+                android:hint="km"
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
     </LinearLayout>
@@ -301,13 +303,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="250dp">
+            android:layout_height="wrap_content">
 
             <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/animation_view"
+                android:id="@+id/animation_preview"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="400dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
@@ -315,7 +316,7 @@
                 android:scaleType="centerInside"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_fileName="644-loading-disc.json" />
+                app:lottie_fileName="load_planet.json" />
 
         </LinearLayout>
 
@@ -331,7 +332,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/create_btn_bg"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-condensed"
                 android:onClick="completePlanet"
                 android:text="Create a Planet"
                 android:textAlignment="center"

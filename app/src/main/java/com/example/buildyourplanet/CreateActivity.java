@@ -51,7 +51,7 @@ public class CreateActivity extends AppCompatActivity {
         et_diameter = findViewById(R.id.et_diameter);
 
         // animation view
-        animationView = findViewById(R.id.animation_view);
+        animationView = findViewById(R.id.animation_preview);
         animationView.playAnimation();
         //animationView.setScale(1.4f);
         animationView.setProgress(0.5f);
