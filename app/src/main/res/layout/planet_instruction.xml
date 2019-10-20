@@ -118,4 +118,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698"></ImageView>
 
+    <ImageView
+        android:id="@+id/myPlanet"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/my_planet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679"></ImageView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

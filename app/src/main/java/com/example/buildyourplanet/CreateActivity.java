@@ -26,11 +26,11 @@ public class CreateActivity extends AppCompatActivity {
     et_temp, et_distance, et_atmo, et_diameter;
     private ObjectAnimator anim;
     LottieAnimationView animationView;
-
+    String mission="";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create);
-
+         mission = getIntent().getStringExtra("mission");
         // declaration components
         ch1 = findViewById(R.id.cb_surface_dust);
         ch2 = findViewById(R.id.cb_surface_water);
@@ -104,7 +104,7 @@ public class CreateActivity extends AppCompatActivity {
         Intent values_intent = new Intent(this, PlanetInstruction.class);
         values_intent.putExtra("data", values);
 
-        String mission = getIntent().getStringExtra("mission");
+
         values_intent.putExtra("mission", mission);
 
         startActivity(values_intent);

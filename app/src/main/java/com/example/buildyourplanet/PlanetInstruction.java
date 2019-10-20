@@ -55,7 +55,6 @@ public class PlanetInstruction extends AppCompatActivity implements Serializable
         setContentView(R.layout.planet_instruction);
         int score = 0 ;
         String mission = getIntent().getStringExtra("mission");
-
 //        Button createButton = (Button)findViewById(R.id.start);
 //        createButton.setOnClickListener(new View.OnClickListener(){
 //            @Override
@@ -64,6 +63,16 @@ public class PlanetInstruction extends AppCompatActivity implements Serializable
 //                startActivity(intent);
 //            }
 //        });
+//
+
+//        iv_earth = findViewById(R.id.earth);
+//        final Button onButton = (Button) findViewById(R.id.start);
+//        onButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                performAnimation(R.anim.translate_position);
+//            }
+//        });
+
         ArrayList<Double> Wlist = (ArrayList<Double>) getIntent().getSerializableExtra("data");
         double pct_dust = Wlist.get(0);
         double pct_water = Wlist.get(1);
@@ -106,23 +115,22 @@ public class PlanetInstruction extends AppCompatActivity implements Serializable
         else mass_water = 0;
         CalculateMass(pct_dust, pct_water, pct_rocks, pct_soil, mass_water);
         CalculateGravity();
-        if(mission=="mission 1")
+        if(mission.equals("mission 1"))
         {
-            score = CheckMission1();
+           //score = CheckMission1();
+            score= 0 ;
         }
-        else if(mission=="mission 2")
+        else if(mission.equals("mission 2"))
         {
-            score = score(pct_dust, pct_water, pct_carbon, pct_hydrogen, pct_rocks, pct_soil);
+            //score = score(pct_dust, pct_water, pct_carbon, pct_hydrogen, pct_rocks, pct_soil);
+            score=10;
+          // message(10);
         }
+//        Toast.makeText(getApplicationContext(), Integer.toString(score),
+//                Toast.LENGTH_LONG).show();
 
         message(score);
-        iv_earth = findViewById(R.id.earth);
-        final Button onButton = (Button) findViewById(R.id.start);
-        onButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                performAnimation(R.anim.translate_position);
-            }
-        });
+
 
 
     }
@@ -149,19 +157,26 @@ public class PlanetInstruction extends AppCompatActivity implements Serializable
             num++;
         if(diameter >= 7.756 && diameter <= 17.756)
             num++;
+
+
+
         return num;
     }
     protected void message(int total) {
+
+        ImageView iv = findViewById(R.id.myPlanet);
         if (total == 10) {
             new SweetAlertDialog(PlanetInstruction.this, SweetAlertDialog.SUCCESS_TYPE)
                     .setTitleText("PERFECT")
                     .setContentText("It is appropriate planet")
                     .show();
-        } else if (total >= 6) {
+            iv.setVisibility(View.VISIBLE);
+        } else if (total >= 6 && total < 10) {
             new SweetAlertDialog(PlanetInstruction.this, SweetAlertDialog.SUCCESS_TYPE)
                     .setTitleText("Very good")
                     .setContentText("It is appropriate planet")
                     .show();
+            iv.setVisibility(View.VISIBLE);
         } else if (total < 6) {
             new SweetAlertDialog(PlanetInstruction.this, SweetAlertDialog.ERROR_TYPE)
                     .setTitleText("FAIL")
@@ -175,6 +190,7 @@ public class PlanetInstruction extends AppCompatActivity implements Serializable
                             startActivity(intent);
                         }
                     }).show();
+            iv.setVisibility(View.INVISIBLE);
         }
 
     }
