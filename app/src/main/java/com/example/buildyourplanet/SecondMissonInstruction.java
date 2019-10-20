@@ -1,24 +1,32 @@
 package com.example.buildyourplanet;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
 public class SecondMissonInstruction extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.secondmisson_instruction);
-
-        Button startButton = (Button)findViewById(R.id.start);
-        startButton.setOnClickListener(new View.OnClickListener(){
+        SweetAlertDialog dialog = new SweetAlertDialog(SecondMissonInstruction.this,SweetAlertDialog.WARNING_TYPE);
+        dialog.setCancelable(false);
+        dialog.setTitleText("MISSION");
+        dialog.setContentTextSize(23);
+        dialog.setContentText("1. Create new planet similar to Earth 2. Consider the features of Earth");
+        dialog.setConfirmText("CREATE!");
+        dialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), SecondMissonInstruction.class);
+            public void onClick(SweetAlertDialog sweetAlertDialog) {
+                Intent intent = new Intent(getApplicationContext(), CreateActivity.class);
                 startActivity(intent);
             }
         });
+        dialog.show();
     }
 }

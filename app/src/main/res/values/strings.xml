@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">BuildYourPlanet</string>
+
+    // field_surface radio group
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="purple">Purple</string>
+
+    // mission
+    <string name="firstmission_dialog1">Wait, what is that? Something is approaching.</string>
+
+    <string name="firstmission_dialog2">Asteroid... It is an asteroid!</string>
+
+    <string name="firstmission_dialog3">Diameter 75m. It will be like a nuclear bomb explosion if it hits ground.</string>
+
+    <string name="firstmission_dialog4">We have to stop it.</string>
+
+    // earth
+    <string name="earthIs">Earth is...\n
+        materials: minerals, rocks, soil and water
+    \nDiameter: 12,756 km
+    \nDistance from the Sun: 149.6 (10^6)km</string>
+
+    // jupiter
+    <string name="jupiterIs">Jupiter is...\n
+        materials: minerals, rocks, soil and water
+    \nDiameter: 12,756 km
+    \nDistance from the Sun: 149.6 (10^6)km</string>
 </resources>

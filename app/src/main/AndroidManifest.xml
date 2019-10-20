@@ -12,10 +12,8 @@
         <activity android:name=".CreateActivity" />
         <activity android:name=".FirstMissonActivity" />
         <activity android:name=".SecondMissonActivity" />
-        <activity android:name=".ThirdMissonActivity" />
         <activity android:name=".FirstMissonInstruction" />
         <activity android:name=".SecondMissonInstruction" />
-        <activity android:name=".ThirdMissonInstruction" />
         <activity android:name=".PlanetInstruction" />
         <activity android:name=".MainActivity">
             <intent-filter>

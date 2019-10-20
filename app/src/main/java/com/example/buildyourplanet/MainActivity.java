@@ -18,11 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button first_misson = (Button)findViewById(R.id.firstMission);
         Button second_misson = (Button)findViewById(R.id.secondMission);
-        Button third_misson = (Button)findViewById(R.id.thirdMission);
 
         // animation view
         animationView = findViewById(R.id.animation_view);
-                animationView.playAnimation();
+        animationView.playAnimation();
         //animationView.setScale(1.4f);
         animationView.setProgress(0.5f);
 
@@ -40,17 +39,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        third_misson.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), ThirdMissonActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     public void test (View v) {
-        Intent intent = new Intent(getApplicationContext(), PlanetInstruction.class);
+        Intent intent = new Intent(getApplicationContext(), CreateActivity.class);
         startActivity(intent);
     }
 }
