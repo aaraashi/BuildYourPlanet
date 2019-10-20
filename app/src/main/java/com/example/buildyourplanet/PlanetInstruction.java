@@ -143,7 +143,7 @@ public class PlanetInstruction extends AppCompatActivity implements Serializable
             num++;
         if(temp >= 11.85 && temp <= 21.85)
             num++;
-        if(distance >= 140000000 && distance <= 160000000)
+        if(distance >= 140 && distance <= 160)
             num++;
         if(atmo >= 650 && atmo <= 750)
             num++;
