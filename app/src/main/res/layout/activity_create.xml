@@ -48,14 +48,15 @@
             android:text="Dust"
             android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/et_dust"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="5"
-            android:inputType="numberDecimal"
-            android:layout_marginStart="20dp"/>
+            <EditText
+                android:id="@+id/et_dust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:ems="5"
+                android:hint="%"
+                android:inputType="numberDecimal" />
 
         <CheckBox
             android:id="@+id/cb_surface_water"
@@ -67,14 +68,15 @@
             android:textSize="18sp"
             android:text="Water"/>
 
-        <EditText
-            android:id="@+id/et_water"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="5"
-            android:inputType="numberDecimal"
-            android:layout_marginStart="20dp"/>
+            <EditText
+                android:id="@+id/et_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:ems="5"
+                android:hint="%"
+                android:inputType="numberDecimal" />
         </LinearLayout>
     <LinearLayout
         android:id="@+id/field_surface2"
@@ -97,10 +99,11 @@
             android:id="@+id/et_carbon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:ems="5"
-            android:inputType="numberDecimal"
-            android:layout_marginStart="20dp"/>
+            android:hint="%"
+            android:inputType="numberDecimal" />
 
         <CheckBox
             android:id="@+id/cb_surface_hydrogen"
@@ -116,10 +119,11 @@
             android:id="@+id/et_hydrogen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:ems="5"
-            android:inputType="numberDecimal"
-            android:layout_marginStart="20dp"/>
+            android:hint="%"
+            android:inputType="numberDecimal" />
 
     </LinearLayout>
         <LinearLayout
@@ -138,14 +142,16 @@
                 android:orientation="vertical"
                 android:textSize="18sp"
                 android:text="Rocks"/>
+
             <EditText
                 android:id="@+id/et_rocks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:layout_weight="1"
                 android:ems="5"
-                android:inputType="numberDecimal"
-                android:layout_marginStart="20dp"/>
+                android:hint="%"
+                android:inputType="numberDecimal" />
 
 
             <CheckBox
@@ -162,10 +168,11 @@
                 android:id="@+id/et_soil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:layout_weight="1"
                 android:ems="5"
-                android:inputType="numberDecimal"
-                android:layout_marginStart="20dp"/>
+                android:hint="%"
+                android:inputType="numberDecimal" />
         </LinearLayout>
         // Field 2
         <LinearLayout
